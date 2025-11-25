@@ -13,8 +13,8 @@ public class TricentisTest {
          // open web browser
         driver.get("https://demowebshop.tricentis.com/");
         //System.out.println(driver.getTitle());
-      //  assertEquals("Demo Web Shop",driver.getTitle());
-        WebElement searchBox = driver.findElement(By.id("small-searchterms"));
+       assertEquals("Demo Web Shop",driver.getTitle());
+       String text = driver.
         driver.quit();
     }
 }
