@@ -8,13 +8,18 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class TricentisTest {
     @Test
-    public void tricentisOpenTest(){
-         WebDriver driver = new ChromeDriver();
-         // open web browser
+    public void tricentisOpenTest() {
+        WebDriver driver = new ChromeDriver();
+        // open web browser
         driver.get("https://demowebshop.tricentis.com/");
         //System.out.println(driver.getTitle());
-       assertEquals("Demo Web Shop",driver.getTitle());
-        System.out.println(driver.findElement(By.xpath("/html/body/div[4]/div[1]/div[2]/ul[1]/li[1]/a")).getText());
-       // driver.quit();
+        assertEquals("Demo Web Shop", driver.getTitle());
+        WebElement element = driver.findElement(By.xpath("/html/body/div[4]/div[1]/div[2]/ul[1]/li[1]/a"));
+        String text = element.getText();
+        assertEquals("BOOKS", text);
+        element.click();
+
+        // System.out.println(driver.findElement(By.xpath("/html/body/div[4]/div[1]/div[2]/ul[1]/li[1]/a")).getText());
+        // driver.quit();
     }
 }
