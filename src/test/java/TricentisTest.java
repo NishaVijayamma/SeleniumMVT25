@@ -14,7 +14,7 @@ public class TricentisTest {
         driver.get("https://demowebshop.tricentis.com/");
         //System.out.println(driver.getTitle());
        assertEquals("Demo Web Shop",driver.getTitle());
-       String text = driver.
-        driver.quit();
+        System.out.println(driver.findElement(By.xpath("/html/body/div[4]/div[1]/div[2]/ul[1]/li[1]/a")).getText());
+       // driver.quit();
     }
 }
