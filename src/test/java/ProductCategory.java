@@ -4,11 +4,11 @@ import org.junit.jupiter.api.Test;
 
 import java.util.List;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
+//import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
-public class Product {
+public class ProductCategory {
     @Test
-    public void productCategory(){
+    public void productCategoryTest(){
         WebDriver driver = new ChromeDriver();
         driver.get(" https://demowebshop.tricentis.com/");
         WebElement element = driver.findElement(By.linkText("Books"));
