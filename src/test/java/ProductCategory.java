@@ -13,6 +13,7 @@ public class ProductCategory {
         driver.get(" https://demowebshop.tricentis.com/");
         WebElement element = driver.findElement(By.linkText("Books"));
         element.click();
+        // Display the prices of book
         List<WebElement>elements =driver.findElements(By.cssSelector(".product-item"));
         for(WebElement product : elements){
             WebElement actualPrice = product.findElement(By.cssSelector(".prices .actual-price"));
