@@ -37,7 +37,7 @@ public class RegisterAccount {
         assertTrue(registrationSuccess, "Expected message not found");
     }*/
     }
-/*
+
     @Test
     public void testLogIn() {
         WebDriver driver = new ChromeDriver();
@@ -62,7 +62,7 @@ public class RegisterAccount {
 
     }
 
- */
+
 
 
 }
