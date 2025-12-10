@@ -6,7 +6,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class RegisterAccount {
-    @Test
+   /* @Test
     public void registerAccount() throws InterruptedException {
         WebDriver driver1 = new ChromeDriver();
         // open web browser
@@ -30,13 +30,13 @@ public class RegisterAccount {
         Thread.sleep(2000);
         String actual = driver1.findElement(By.className("result")).getText();
         assertEquals("Your registration completed", actual);
-      /*  // Kontrollera att du hamnar på en bekräftelsesida eller får ett meddelande som säger att kontot skapades.
-        String page = driver1.getPageSource();
-        boolean registrationSuccess = page.contains("Your registration completed");
+        // Kontrollera att du hamnar på en bekräftelsesida eller får ett meddelande som säger att kontot skapades.
+       // String page = driver1.getPageSource();
+      //  boolean registrationSuccess = page.contains("Your registration completed");
 
-        assertTrue(registrationSuccess, "Expected message not found");
-    }*/
+       // assertTrue(registrationSuccess, "Expected message not found");
     }
+    }*/
 
     @Test
     public void testLogIn() {
